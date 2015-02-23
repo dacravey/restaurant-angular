@@ -38,8 +38,13 @@
               <form class="form-inline" role="form">
                 <input type="text" class="form-control input-sm" ng-model="item.name" placeholder="Name" required/>
                 <input type="text" class="form-control input-sm" ng-model="item.cuisine" placeholder="Cuisine" required/>
-                <input type="text" class="form-control input-sm" ng-model="item.price" placeholder="Price" required/>
-
+                <!-- <input type="radio" class="form-control input-sm" ng-model="item.price" placeholder="Price" required/> -->
+                <select>
+                  <option value="expensive">expensive!</option>
+                  <option value="expensive">moderate</option>
+                  <option value="expensive">affordable</option>
+                  <option value="expensive">cheap</option>
+                </select>
                 <button class="btn btn-default btn-sm" type="submit">Save</button>
               </form>
             </span>

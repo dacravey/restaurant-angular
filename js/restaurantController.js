@@ -6,15 +6,17 @@ restaurant.controller('RestaurantCtrl', function RestaurantCtrl($scope) {
       name: $scope.restaurantName,
       cuisine: $scope.restaurantCuisine,
       price: $scope.restaurantPrice
+      // price: $scope.price
     });
 
     $scope.restaurantName = null;
     $scope.restaurantCuisine = null;
     $scope.restaurantPrice = null;
+    //
   };
 
-  $scope.deleteRestaurant = function(restaurant) {
-  var index = $scope.restaurants.indexOf(restaurant);
-  $scope.restaurants.splice(index, 1);
-};
+    $scope.deleteRestaurant = function(restaurant) {
+    var index = $scope.restaurants.indexOf(restaurant);
+    $scope.restaurants.splice(index, 1);
+  };
 });
